@@ -1,0 +1,34 @@
+.header{
+    
+    margin: 0;
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    color: aqua;
+    justify-content: space-between; 
+    /* z-index: 10; */
+    padding: 0 5%;
+    /* position:fixed; */
+    height: 5rem;
+    /* width: 100%; */
+    box-shadow:0 2px 8px burlywood;
+    /* opacity:1; */
+}
+/* @media screen and (max-width: 968px)
+header{
+
+} */
+    
+
+.main-image{
+width: 100%;
+height: 20rem;
+z-index: 0;
+overflow: hidden;
+}
+.main-image img{
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotateZ(-3deg) translateY(-6rem) translateX(-2rem);
+}
