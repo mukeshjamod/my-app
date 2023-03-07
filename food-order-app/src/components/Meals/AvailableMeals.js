@@ -9,24 +9,30 @@ const Dummy_MEALS = [
         id: 'm1',
         name: 'dhosa',
         description: 'rava sambhar and masala',
-        price: 90,
+        price: 90.99,
     },
     {
         id: 'm2',
         name: 'dal-bati',
         description: 'masala dal rajsthani tasty bati',
-        price: 60,
+        price: 60.99,
 
     },
     {
         id: 'm3',
         name: 'kaju paneer masala',
         description: 'graavy kaju panner salts roti punjabi',
-        price: 150
+        price: 150.99
     }];
 
 const AvailableMeals = () => {
-    const mealsList = Dummy_MEALS.map(meal => <MealItem key={meal.is} name={meal.name} description={meal.description} price={meal.price}/>)
+    const mealsList = Dummy_MEALS.map(meal => (
+    <MealItem
+         key={meal.id} 
+         id={meal.id}
+         name={meal.name} 
+         description={meal.description} 
+         price={meal.price}/>));
     return (
         <section className={classes.meals}>
           <Card>
